@@ -1,5 +1,3 @@
 # Geo_cal
-<<<<<<< HEAD
-=======
-# Geo_cal
->>>>>>> First commit
+
+This is a README
