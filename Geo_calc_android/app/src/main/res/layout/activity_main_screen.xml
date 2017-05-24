@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kaur.geo_calc_android.MainScreen">
+
+    <EditText
+        android:id="@+id/P1Latitude"
+        android:layout_width="160dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Enter P1 latitude"
+        android:inputType="numberSigned|numberDecimal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/P1Longitude"
+        android:layout_width="174dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="0dp"
+        android:ems="10"
+        android:hint="Enter p1 longitude"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintLeft_toRightOf="@+id/P1Latitude"
+        tools:layout_editor_absoluteY="12dp" />
+
+    <EditText
+        android:id="@+id/P2Latitude"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Enter P2 Latitude"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/P1Latitude"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <EditText
+        android:id="@+id/P2Longitude"
+        android:layout_width="164dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="4dp"
+        android:ems="10"
+        android:hint="EnterP2 Longitude"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintLeft_toRightOf="@+id/P2Latitude"
+        app:layout_constraintTop_toBottomOf="@+id/P1Longitude"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <Button
+        android:id="@+id/CalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        tools:layout_editor_absoluteX="92dp"
+        app:layout_constraintTop_toBottomOf="@+id/P2Latitude"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/ClearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        app:layout_constraintTop_toBottomOf="@+id/P2Longitude"
+        app:layout_constraintLeft_toRightOf="@+id/CalButton"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="9dp" />
+
+    <TextView
+        android:id="@+id/Dist_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance:"
+        tools:layout_editor_absoluteX="-13dp"
+        app:layout_constraintTop_toBottomOf="@+id/CalButton"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/Bear_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bearing:"
+        tools:layout_editor_absoluteX="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/Dist_label"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/Dist_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/ClearButton"
+        app:layout_constraintLeft_toRightOf="@+id/CalButton"/>
+
+    <TextView
+        android:id="@+id/Bear_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/Dist_View"
+        app:layout_constraintLeft_toRightOf="@+id/CalButton" />
+
+
+    <Button
+        android:id="@+id/settings_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top|end"
+        android:text="Settings"
+        android:textColor="#f9f8f8"
+
+        android:layout_marginTop="160dp"
+        app:layout_constraintTop_toBottomOf="@+id/Dist_View"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
