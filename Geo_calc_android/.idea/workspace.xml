@@ -2405,6 +2405,14 @@
       <option name="presentableId" value="Default" />
       <updated>1495417490680</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added to git.">
+      <created>1495587093002</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1495587093002</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2481,6 +2489,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added to git." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added to git." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
