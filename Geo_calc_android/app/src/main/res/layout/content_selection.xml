@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kaur.geo_calc_android.Selection"
+    tools:showIn="@layout/activity_selection">
+
+    <TextView
+        android:id="@+id/dist_units_label"
+        android:layout_width="110dp"
+        android:layout_height="41dp"
+        android:text="Distance Units:"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/bear_units_label"
+        android:layout_width="112dp"
+        android:layout_height="39dp"
+        android:text="Bearing Units:"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="90dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/dist_units_label"/>
+
+    <Spinner
+        android:id="@+id/dist_spinner"
+        android:layout_width="180dp"
+        android:layout_height="51dp"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/dist_units_label"/>
+
+    <Spinner
+        android:id="@+id/bear_spinner"
+        android:layout_width="180dp"
+        android:layout_height="51dp"
+        tools:layout_editor_absoluteX="188dp"
+        app:layout_constraintTop_toBottomOf="@+id/dist_spinner"
+        app:layout_constraintLeft_toRightOf="@+id/bear_units_label"
+        tools:layout_editor_absoluteY="84dp" />
+</android.support.constraint.ConstraintLayout>
